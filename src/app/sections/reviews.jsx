@@ -99,13 +99,13 @@ const Reviews = () => {
 
   return (
     <div className='reviews-sec bg-yellow-300 py-20'>
-      <div className="container relative">
-        <div className='flex justify-center text-5xl text-orange-800'>
-          <Image src={head_style_left} alt='icon'/>
-            <p >Our Students <span className='bg-orange-800 text-white p-3'>Placed</span></p> 
-          <Image src={head_style_right} alt='icon'/>
+      <div className="mx-[30px] lg:mx-[90px] relative">
+        <div className='flex justify-center lg:text-5xl  text-orange-800'>
+          <Image src={head_style_left} alt='icon ' className='hidden lg:block'/>
+            <p >Our Students <span className='bg-orange-800 text-white p-1 lg:p-3'>Placed</span></p> 
+          <Image src={head_style_right} alt='icon' className='hidden lg:block'/>
         </div>
-        <p className='text-center my-10 text-orange-800'>IN COMAPANIES</p>
+        <p className='text-center my-3 lg:my-10 text-orange-800'>IN COMAPANIES</p>
 
         
     <Carousel
@@ -118,7 +118,7 @@ const Reviews = () => {
     >
       <CarouselContent>
       {list.map((item)=>(
-        <CarouselItem className="basis-1/3 pt-36 relative" key={item.id}>
+        <CarouselItem className="xl:basis-1/3 lg:basis-1/2 pt-36 relative" key={item.id}>
           <div className='flex justify-center '>
              <Image src={item.student_images} alt={item.name} className='w-28 student-image absolute top-10'/>
           </div>
@@ -140,7 +140,7 @@ const Reviews = () => {
       ))}
       
         </CarouselContent>
-        <div className='flex justify-evenly items-end  absolute right-5 bottom-[-30px]'>
+        <div className='hidden md:flex justify-evenly items-center lg:items-end  absolute lg:right-5 lg:bottom-[-30px]'>
            <CarouselNext className={carouselbtn_style}/>
            <CarouselPrevious className={carouselbtn_style}/>
            </div>

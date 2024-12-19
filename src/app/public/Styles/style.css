@@ -52,6 +52,16 @@ video {
     top: 80%;
    
 }
+@media screen and (max:991px) {
+    .carousel-btn-prev{
+       display: none;
+        
+    }
+    .carousel-btn-next{
+       display: none;
+       
+    }
+}
 .carousel-btn{
     background-color:var(--red);
     border: none;
@@ -96,9 +106,9 @@ video {
 .certificate-icons{
     background: #e1e1e11a;
 }
-.certificate-sec .certificate-col-2{
+/* .certificate-sec .certificate-col-2{
     width: 80%;
-}
+} */
 .certificate-icons .dark-circle{
     background-color: var(--black);
     border-radius: 50%;
@@ -138,6 +148,16 @@ video {
     margin-bottom: 30px;
     box-shadow: -10px 10px 0px 0px var(--yellow);
 }
+.student-review .card-background-1{
+    position: relative;
+    margin-left: 0px;
+    padding: 30px 8px 38px 30px;
+    background: #363636;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: -10px 10px 0px 0px var(--yellow);
+}
+
 .card-background .card-image{
     position: absolute;
     left: -40px;
@@ -149,6 +169,5 @@ video {
     background-color: #e8f1ff;
 }
 .client-images{
-    
     box-shadow: -1px 2px 10px 0px #00000033;
 }

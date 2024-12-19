@@ -8,8 +8,8 @@ import reesan_logo from '../public/Images/Reesan-Logo.png'
 import reesan_team from '../public/Images/reesanit-team.png'
 const Reesan = () => {
   return (
-    <div className='container '>
-      <div className='flex justify-center align-middle'>
+    <div className='mx-[30px] lg:mx-[90px]'>
+      <div className='flex flex-col lg:flex-row justify-center items-center'>
        <Image src={quote_image} alt=",," />\
        <span className='text-4xl ml-3 pt-4 reesan-text'>We are not just trainers, we are <strong> Real-Time Employees</strong> form  Our </span><br/>
       </div>

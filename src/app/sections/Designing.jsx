@@ -34,12 +34,12 @@ const Designing = () => {
     
   }
   return (
-    <div className='container designing my-10  px-12'>
-      <div className='grid grid-cols-2'>
+    <div className='  designing my-10  px-12'>
+      <div className='flex flex-col gap-3 lg:gap-10 lg:flex-row'>
         <div className='pt-14'>
             <Image src={student_image} alt='student image'/>
         </div>
-        <div>
+        <div className='w-full lg:w-[80%]'>
           <ul type='none' className='py-10 text-white'>
             <li className='text-5xl font-bold py-3'>Full Stack <br /> <span className='designing-head'>Development</span></li>
             <li className='py-3'>Graphic design focuses on visual communication and aesthetics. It involves creating visually appealing graphics and layouts for various purposes, such as logos, advertisements, and print materials.</li>

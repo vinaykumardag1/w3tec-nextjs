@@ -20,8 +20,8 @@ const Footer_sec = () => {
   return (
 
     <div className='bg-black text-regular-gray py-10'>
-      <div className='container '>
-        <div className='grid grid-cols-4 py-14'>
+      <div className='mx-[30px] lg:mx-[90px] '>
+        <div className='grid grid-cols-1 lg:grid-cols-4 py-14'>
          <ul type='none'>
             <li className='py-5'><Image src={w3tec_logo_white} alt='w3 logo white'/></li>
             <li className='pl-4 my-6 border-l-4 border-regular-gray'>Learn with w3 technologies <br />to start your career</li>
@@ -33,13 +33,13 @@ const Footer_sec = () => {
             </li>
         </ul>
         
-        <ul type='none' className='pl-10' >
+        <ul type='none' className='lg:pl-10' >
             <li className={footer_text_style}>Contact Us</li>
             <li className='flex gap-3'><Image src={phone_icon} alt='phone icon' /> <a href="tel:++91741693933">+91 741-693-9333</a></li>
             <li className='flex gap-3 py-3'><Image src={email_icon} alt='email icon'/> <a href="mailto:info@w3tec.com">info@w3tec.com</a></li>
             <li className='flex gap-3 items-start'><Image src={location_icon} alt='location icon'/>Above IDBI Bank, LR Shine Building 4th Floor, Beside 1-Town Police Station, VRC, Nellore, AP, India, 524001.</li>
         </ul>
-        <div className='flex justify-center'>
+        <div className='flex lg:justify-center'>
          <ul type='none'>
             <li className={footer_text_style}>Company</li>
             <li>About Us</li>

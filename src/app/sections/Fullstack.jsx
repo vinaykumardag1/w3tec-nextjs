@@ -87,12 +87,12 @@ const Fullstack = () => {
     
   }
   return (
-    <div className='container full-stack my-10  px-12'>
-      <div className='grid grid-cols-2'>
+    <div className=' full-stack my-10  px-12'>
+      <div className='flex flex-col gap-3 lg:gap-10 lg:flex-row'>
         <div className='pt-14'>
             <Image src={student_image} alt='student image'/>
         </div>
-        <div>
+        <div className='w-full lg:w-[80%]'>
           <ul type='none' className='py-10 text-white'>
             <li className='text-5xl font-bold py-3'>Full Stack <br /> <span className='text-yellow-400'>Development</span></li>
             <li className='py-3'>Full stack development refers to the ability to work on both the front-end (the client-side) and back-end (the server-side) portions of an application. It involves designing user interfaces, creating databases, and writing server-side logic.</li>

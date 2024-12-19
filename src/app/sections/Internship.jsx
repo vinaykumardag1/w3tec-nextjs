@@ -20,34 +20,36 @@ const Internship = () => {
 
   return (
     <div className='bg-black text-white'>
-    <div className='ml-28 flex gap-10 justify-between py-12 relative'>
+    <div className='ml-28 flex flex-col lg:flex-row gap-10 justify-between py-12 relative'>
       <div className='pt-16'>
         
         <h2 className='text-4xl py-5'>Internships & <br /><span className='text-yellow-500'>Courses</span></h2>
         <p>Live, interactive sessions guided by experts to enhance <br /> your expertise and skills in your chosen area of interest.</p>
        
       </div>
-      <div className='w-[65%]'>
+      <div className=' lg:w-[65%]'>
       <Carousel className='py-5' plugins={[
         Autoplay({
           delay: 3000,
         }),]} loop>
        <CarouselContent>
-        <CarouselItem className="basis-1/3">
+        <CarouselItem className="lg:basis-1/3 ">
             <Image src={front_end_image} alt='' className='carousel-img rounded-3xl'/>
         </CarouselItem>
-        <CarouselItem className="basis-1/3">
+        <CarouselItem className="lg:basis-1/3 ">
             <Image src={front_end_image} alt='' className='carousel-img  rounded-3xl'/>
         </CarouselItem>
-        <CarouselItem className="basis-1/3">
+        <CarouselItem className="lg:/3 basis-1">
             <Image src={designing_image} alt='' className='carousel-img  rounded-3xl'/>
         </CarouselItem>
-        <CarouselItem className="basis-1/3">
+        <CarouselItem className="lg:basis-1/3 ">
             <Image src={digital_marketing} alt='' className='carousel-img  rounded-3xl'/>
         </CarouselItem>
        </CarouselContent >
+       
        <CarouselPrevious className="carousel-btn-prev carousel-btn" />
         <CarouselNext className="carousel-btn-next carousel-btn" />
+       
      </Carousel>
       </div>
     </div>

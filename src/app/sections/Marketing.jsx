@@ -64,10 +64,10 @@ const Marketing = () => {
     
   }
   return (
-    <div className='container marketing my-10 px-12'>
-      <div className='grid grid-cols-2'>
+    <div className=' marketing my-10 px-12'>
+      <div className='flex flex-col-reverse gap-3 lg:gap-10 lg:flex-row'>
         
-        <div>
+        <div className='w-full lg:w-[80%]'>
           <ul type='none' className='py-10 text-white'>
             <li className='text-5xl font-bold py-3'>Full Stack <br /> <span className='marketing-head'>Development</span></li>
             <li className='py-3'>Digital marketing encompasses all marketing efforts that utilize electronic devices and the internet. It includes various channels such as social media, search engines, email, and websites to connect with current and prospective customers.</li>

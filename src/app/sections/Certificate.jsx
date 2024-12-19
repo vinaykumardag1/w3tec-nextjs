@@ -8,16 +8,16 @@ import suitcase_icon from '../public/Images/breifcase-icon.svg'
 const Certificate = () => {
   return (
     <div className="certificate-sec">
-    <div className='container certificate-sec py-10'>
-      <div className="flex justify-start gap-10 align-middle">
+    <div className='mx-[30px] lg:mx-[90px] certificate-sec py-10'>
+      <div className="flex flex-col lg:flex-row justify-start gap-10 ">
         <div className=''>
             <Image src={certificate_img} alt='certifcate image'/>
         </div>
-        <div className='certificate-col-2 text-white py-10'>
+        <div className='w-full lg:w-[80%] text-white py-10'>
            <p className='text-5xl py-8'>Elevate your presence <br /> with <strong>Certification!</strong> </p>
-            <div className="certificate-icons grid grid-cols-3 px-16 py-4  place-items-center rounded-2xl">
+            <div className="certificate-icons grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-16 py-4  place-items-center rounded-2xl">
                 <div className='text-sm text-center'>
-                <div className='dark-circle flex justify-center'>
+                <div className='dark-circle flex  justify-center'>
                     <Image src={certificate_award_icon} alt='certificate-icon '/>
                 </div>
                 <p> <strong>Industry-Recognized <br />

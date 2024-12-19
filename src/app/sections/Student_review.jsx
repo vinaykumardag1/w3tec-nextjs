@@ -100,25 +100,25 @@ const Student_review = () => {
 
   return (
     <div className='student-review'>
-    <div className='container '>
-        <div className='flex justify-center items-center text-4xl'>
-               <Image src={review_head_icon} alt='icon' />Reviews from 
+    <div className='mx-[30px] lg:mx-[90px]'>
+        <div className='flex flex-col lg:flex-row justify-center items-center lg:text-4xl'>
+               <Image src={review_head_icon} alt='icon' className='w-[50px]' />Reviews from 
         </div>
-       <p className='text-center text-4xl'> W3 Technologies <span className='bg-red-500 py-3 px-5'>Students</span></p>
+       <p className='text-center lg:text-4xl'> W3 Technologies <span className='bg-red-500 lg:py-3 lg:px-5'>Students</span></p>
 
       <Carousel className='py-10'>
      <CarouselContent>
       {list.map((item)=>(
-        <CarouselItem key={item.id} className='carousel-item-1'>
+        <CarouselItem key={item.id} className=' carousel-item-1'>
             <Card className='flex justify-center bg-inherit border-none text-white'>
-                <div className="card-background flex justify-between gap-8 items-center w-2/3">                  
+                <div className="card-background-1 card-background flex flex-col lg:flex-row  justify-between gap-8 items-center w-full lg:w-2/3">                  
                            <div className='card-image'>                
                           <Image src={item.student_images} alt={item.name} className='w-32'/>
                         </div>
-                        <ul type='none' className='ml-20'>
-                            <li className='flex gap-3 items-start'><Image src={review_text_style_icon} alt='icon'/>{item.description}</li>
-                            <li className='pl-20 pt-5'>{item.name}</li>
-                            <li className='pl-20'>{item.role}</li>
+                        <ul type='none' className=' lg:ml-20'>
+                            <li className='flex gap-3 flex-col lg:flex-row  items-start'><Image src={review_text_style_icon} alt='icon'/>{item.description}</li>
+                            <li className='lg:pl-20 pt-5'>{item.name}</li>
+                            <li className='lg:pl-20'>{item.role}</li>
                         </ul>
                     </div>
             
