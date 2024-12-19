@@ -8,7 +8,7 @@ const Questioning = () => {
   return (
     <>
     <div className='doubt-sec py-10'>
-     <div className='container mx-auto'>
+     <div className='container '>
         <p className="text-black text-5xl font-bold py-11"><strong>Have any <span className='bg-yellow-400 py-2 px-4'>Questions?</span></strong></p>
         <p className='text-3xl '>Do you want to take advantage of our <strong>Special Offers?</strong><br /></p>
         <p className='text-3xl '>Please Call us today</p>

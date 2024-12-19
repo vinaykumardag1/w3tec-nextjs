@@ -40,7 +40,7 @@ const Client_sec = () => {
         houtonfood_image,tennisclub_image,xit_image
      ]
   return (
-    <div className='container mx-auto py-10'>
+    <div className='container  py-10'>
       <p className='text-center text-5xl'>Our <span className=' text-white bg-blue-500 p-4 px-5'>Clients</span> we work with</p>
       <div className='grid grid-cols-5 py-10 place-items-center '>
         {list.map((item,index)=>(

@@ -20,7 +20,7 @@ const Footer_sec = () => {
   return (
 
     <div className='bg-black text-regular-gray py-10'>
-      <div className='container mx-auto'>
+      <div className='container '>
         <div className='grid grid-cols-4 py-14'>
          <ul type='none'>
             <li className='py-5'><Image src={w3tec_logo_white} alt='w3 logo white'/></li>

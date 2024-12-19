@@ -49,7 +49,7 @@ const Services_sec = () => {
     return (
         <>
         <div className='services-sec'>
-        <div className="container mx-auto py-20">
+        <div className="container py-20">
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                 <Card className='flex justify-start items-center bg-inherit text-blue-500'>
                <p className='text-5xl border-l-4 pl-8 border-blue-500'> We Provide <br /> <strong>Services</strong> on</p>

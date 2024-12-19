@@ -21,7 +21,7 @@ import Autoplay from "embla-carousel-autoplay"
 const Banner = () => {
   return (
     <div className='pt-28'>
-    <div className='container mx-auto'>
+    <div className='container '>
       <div className="grid grid-cols-2">
         <div className='py-20 relative'>
          <h1 className='text-5xl  font-bold'><span className='text-red-600'>Learn from</span> <br /> INDUSTRY EXPERTS <br /> To Start Your <br /><span className='text-red-600'> IT Career</span></h1>

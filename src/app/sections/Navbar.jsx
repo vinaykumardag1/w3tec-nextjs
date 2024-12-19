@@ -63,7 +63,7 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed w-full top-0 z-10" style={{background:color}}>
-        <div className="container w-full flex mx-auto py-10 gap-10">
+        <div className="container w-full flex  py-10 gap-10">
          <Image src={w3tec_logo} alt="w3tec logo" />
            <ul type='none' className='w-full  text-lg flex gap-10 items-center' >
             <li>

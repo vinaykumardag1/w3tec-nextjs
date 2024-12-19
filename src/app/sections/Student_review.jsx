@@ -100,7 +100,7 @@ const Student_review = () => {
 
   return (
     <div className='student-review'>
-    <div className='container mx-auto'>
+    <div className='container '>
         <div className='flex justify-center items-center text-4xl'>
                <Image src={review_head_icon} alt='icon' />Reviews from 
         </div>

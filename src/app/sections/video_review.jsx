@@ -26,7 +26,7 @@ const Video_review = () => {
     }
   
   return (
-    <div className='container mx-auto py-24'>
+    <div className='container  py-24'>
         <p className='text-center pb-20 text-5xl'>What our <span className='bg-yellow-400 text-white'>Students Say!</span></p>
      <Carousel>
       <CarouselContent> 

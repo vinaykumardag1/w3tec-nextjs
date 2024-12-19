@@ -1,4 +1,4 @@
-'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import certificate_img from '../public/Images/Certificate.png'
@@ -8,7 +8,7 @@ import suitcase_icon from '../public/Images/breifcase-icon.svg'
 const Certificate = () => {
   return (
     <div className="certificate-sec">
-    <div className='container certificate-sec mx-auto py-10'>
+    <div className='container certificate-sec py-10'>
       <div className="flex justify-start gap-10 align-middle">
         <div className=''>
             <Image src={certificate_img} alt='certifcate image'/>

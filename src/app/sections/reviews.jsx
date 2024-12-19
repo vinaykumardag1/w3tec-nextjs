@@ -99,7 +99,7 @@ const Reviews = () => {
 
   return (
     <div className='reviews-sec bg-yellow-300 py-20'>
-      <div className="container mx-auto relative">
+      <div className="container relative">
         <div className='flex justify-center text-5xl text-orange-800'>
           <Image src={head_style_left} alt='icon'/>
             <p >Our Students <span className='bg-orange-800 text-white p-3'>Placed</span></p> 
