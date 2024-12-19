@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Internship from './sections/Internship'
 import Skills from './sections/Skills'
 import Reesan from './sections/Reesan'

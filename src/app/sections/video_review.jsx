@@ -35,7 +35,7 @@ const Video_review = () => {
         <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20' ><Image src={play_icon} alt='play-icon'/></button>
           <Image src={chavika_image} alt='chavika Image' className='absolute h-[99%] w-[99%] rounded-3xl ' />
           </div>
-        <iframe className='rounded-3xl' src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+        <iframe className='rounded-3xl'  width="1296" height="640" src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
        
         </iframe>
        
