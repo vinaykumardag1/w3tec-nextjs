@@ -35,7 +35,7 @@ const Video_review = () => {
         <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20' ><Image src={play_icon} alt='play-icon'/></button>
           <Image src={chavika_image} alt='chavika Image' className='absolute rounded-3xl ' />
           </div>
-        <iframe className='rounded-3xl w-full'  src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+        <iframe className='rounded-3xl w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
        
         </iframe>
        
@@ -46,11 +46,11 @@ const Video_review = () => {
         <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20'><Image src={play_icon} alt='play-icon'/></button>
           <Image src={nandin_image} alt='nandini Image' className='absolute'   />
           </div>
-        <iframe className='w-full' src="https://www.youtube.com/embed/KaTjcByzPBc" title="Our Happy Students Naga Nandini M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        <iframe className='w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/KaTjcByzPBc" title="Our Happy Students Naga Nandini M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </CarouselItem>
      </CarouselContent>
-     <CarouselNext className='hidden lg:block bg-red-600 p-6'/>
-     <CarouselPrevious className='hidden lg:block bg-red-600 p-6'/>
+     <CarouselNext className='hidden lg:flex  text-white bg-red-600 p-6'/>
+     <CarouselPrevious className='hidden lg:flex text-white bg-red-600 p-6'/>
     </Carousel>
     </div>
   )
