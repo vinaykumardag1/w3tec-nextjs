@@ -11,14 +11,14 @@ const Certificate = () => {
     <div className='mx-[30px] lg:mx-[90px] certificate-sec py-10'>
       <div className="flex flex-col lg:flex-row justify-start gap-10 ">
         <div className=''>
-            <Image src={certificate_img} alt='certifcate image'/>
+            <Image src={certificate_img} alt='certifcate image' loading="eager"/>
         </div>
         <div className='w-full lg:w-[80%] text-white py-10'>
            <p className='text-5xl py-8'>Elevate your presence <br /> with <strong>Certification!</strong> </p>
             <div className="certificate-icons grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:px-16 py-4  place-items-center rounded-2xl">
                 <div className='text-sm text-center'>
                 <div className='dark-circle flex  justify-center'>
-                    <Image src={certificate_award_icon} alt='certificate-icon '/>
+                    <Image src={certificate_award_icon} alt='certificate-icon ' loading="eager"/>
                 </div>
                 <p> <strong>Industry-Recognized <br />
                      Certificate </strong></p>
@@ -26,14 +26,14 @@ const Certificate = () => {
 
                <div className='text-sm text-center'>
                 <div className='dark-circle flex justify-center'>
-                    <Image src={employee_icon} alt='employee icon'/>
+                    <Image src={employee_icon} alt='employee icon' loading="eager"/>
                    
                 </div> 
                 <strong>Stand Out in Job <br />
                     Market</strong>
                 </div>
                 <div className='text-sm text-center'>
-                <div className='dark-circle flex justify-center'><Image src={suitcase_icon} alt='suitcase icon'/>
+                <div className='dark-circle flex justify-center'><Image src={suitcase_icon} loading="eager" alt='suitcase icon'/>
                 
                 </div>
                 <strong>Your Gateway <br />

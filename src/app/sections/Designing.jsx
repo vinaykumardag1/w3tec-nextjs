@@ -37,7 +37,7 @@ const Designing = () => {
     <div className='  designing my-10  px-12'>
       <div className='flex flex-col gap-3 lg:gap-10 lg:flex-row'>
         <div className='pt-14'>
-            <Image src={student_image} alt='student image'/>
+            <Image src={student_image} alt='student image' loading="eager"/>
         </div>
         <div className='w-full lg:w-[80%]'>
           <ul type='none' className='py-10 text-white'>
@@ -48,7 +48,7 @@ const Designing = () => {
             <li className='py-3'>
                 <ul type="none" className='flex '>
                     {list.list1.map((item)=>(
-                      <li key={item.id}><Image src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image src={item.image} alt={item.alt} loading="eager"/></li>
                     ))}
                  </ul> 
              </li>

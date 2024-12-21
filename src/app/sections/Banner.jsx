@@ -25,9 +25,9 @@ const Banner = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         <div className='py-20 relative'>
          <h1 className='text-5xl  font-bold'><span className='text-red-600'>Learn from</span> <br /> INDUSTRY EXPERTS <br /> To Start Your <br /><span className='text-red-600'> IT Career</span></h1>
-           <Image src={python_icon} alt="python icon" className="absolute -top-0 left-1/2" />
-            <Image src={front_end_icon} alt="" className="absolute top-1/4 right-20 pt-10" /> 
-            <Image src={fullstack_icon} alt="Full-Stack" className="absolute right-40 left-1/4" />
+           <Image src={python_icon} alt="python icon" loading="eager" className="absolute -top-0 left-1/2" />
+            <Image src={front_end_icon} alt="front end icon" loading="eager" className="absolute top-1/4 right-20 pt-10" /> 
+            <Image src={fullstack_icon} alt="Full-Stack" loading="eager" className="absolute right-40 left-1/4" />
 
             <div className="flex gap-10 py-20">
                 <button className="bg-red-600  text-white px-6 py-3  rounded-xl">
@@ -40,7 +40,7 @@ const Banner = () => {
         </div>  
 
         <div className='py-10'>
-          <Image src={Digital_img} alt='digital marketing logo'/>
+          <Image src={Digital_img} loading="eager" alt='digital marketing logo'/>
         <Carousel
         plugins={[
           Autoplay({
@@ -49,10 +49,10 @@ const Banner = () => {
         ]} 
         >
          <CarouselContent>
-          <CarouselItem className="relative"><Image src={class_img} alt=''/>
+          <CarouselItem className="relative"><Image src={class_img} alt='class image' loading="eager"/>
            <p className='text-2xl text-white absolute bottom-11 left-14 font-bold'>#<span className='text-yellow-500'>INTERACTIVE</span> COURSES</p>
           </CarouselItem>
-             <CarouselItem><Image src={kick_start_img} alt=''/>
+             <CarouselItem><Image src={kick_start_img} alt='kick start image' loading="eager"/>
               <p className='text-2xl w-full text-white text-center absolute bottom-11 font-bold'>#<span className='text-yellow-500'>JOIN</span> WITH US</p>
            </CarouselItem>
     

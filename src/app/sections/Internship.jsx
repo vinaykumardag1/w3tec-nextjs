@@ -34,16 +34,16 @@ const Internship = () => {
         }),]} loop>
        <CarouselContent>
         <CarouselItem className="lg:basis-1/3 ">
-            <Image src={front_end_image} alt='' className='carousel-img rounded-3xl'/>
+            <Image src={front_end_image} alt='front end image' loading="eager" className='carousel-img rounded-3xl'/>
         </CarouselItem>
         <CarouselItem className="lg:basis-1/3 ">
-            <Image src={front_end_image} alt='' className='carousel-img  rounded-3xl'/>
+            <Image src={front_end_image} alt='front end image' loading="eager" className='carousel-img  rounded-3xl'/>
         </CarouselItem>
         <CarouselItem className="lg:/3 basis-1">
-            <Image src={designing_image} alt='' className='carousel-img  rounded-3xl'/>
+            <Image src={designing_image} alt='front end image' loading="eager" className='carousel-img  rounded-3xl'/>
         </CarouselItem>
         <CarouselItem className="lg:basis-1/3 ">
-            <Image src={digital_marketing} alt='' className='carousel-img  rounded-3xl'/>
+            <Image src={digital_marketing} alt='front end image' loading="eager" className='carousel-img  rounded-3xl'/>
         </CarouselItem>
        </CarouselContent >
        

@@ -90,7 +90,7 @@ const Fullstack = () => {
     <div className=' full-stack my-10  px-12'>
       <div className='flex flex-col gap-3 lg:gap-10 lg:flex-row'>
         <div className='pt-14'>
-            <Image src={student_image} alt='student image'/>
+            <Image src={student_image} loading="eager" alt='student image'/>
         </div>
         <div className='w-full lg:w-[80%]'>
           <ul type='none' className='py-10 text-white'>
@@ -100,17 +100,17 @@ const Fullstack = () => {
             <li className='py-3'>
                 <ul type="none" className='flex '>
                     {list.list1.map((item)=>(
-                      <li key={item.id}><Image src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image src={item.image} loading="eager" alt={item.alt}/></li>
                     ))}
                  </ul>
                  <ul type="none" className='flex'>
                     {list.list2.map((item)=>(
-                      <li key={item.id}><Image src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image src={item.image} loading="eager" alt={item.alt}/></li>
                     ))}
                  </ul>
                  <ul type="none" className='flex'>
                     {list.list3.map((item)=>(
-                      <li key={item.id}><Image src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image src={item.image} loading="eager" alt={item.alt}/></li>
                     ))}
                  </ul>
              </li>

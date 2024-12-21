@@ -10,14 +10,14 @@ const Reesan = () => {
   return (
     <div className='mx-[30px] lg:mx-[90px]'>
       <div className='flex flex-col lg:flex-row justify-center items-center'>
-       <Image src={quote_image} alt=",," />\
+       <Image loading="eager" src={quote_image} alt=",," />\
        <span className='text-4xl ml-3 pt-4 reesan-text'>We are not just trainers, we are <strong> Real-Time Employees</strong> form  Our </span><br/>
       </div>
        <p className="text-center text-4xl reesan-text"><strong>Parent IT Company</strong></p>
         <div className='flex justify-center py-10'>
-         <Image src={reesan_logo} alt='reesan logo'/>
+         <Image loading="eager" src={reesan_logo} alt='reesan logo'/>
        </div>
-       <Image src={reesan_team} alt='reesan team'/>
+       <Image loading="eager" src={reesan_team} alt='reesan team'/>
     </div>
   )
 }

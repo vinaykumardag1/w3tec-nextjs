@@ -101,9 +101,9 @@ const Reviews = () => {
     <div className='reviews-sec bg-yellow-300 py-20'>
       <div className="mx-[30px] lg:mx-[90px] relative">
         <div className='flex justify-center lg:text-5xl  text-orange-800'>
-          <Image src={head_style_left} alt='icon ' className='hidden lg:block'/>
+          <Image loading="eager" src={head_style_left} alt='icon ' className='hidden lg:block'/>
             <p >Our Students <span className='bg-orange-800 text-white p-1 lg:p-3'>Placed</span></p> 
-          <Image src={head_style_right} alt='icon' className='hidden lg:block'/>
+          <Image loading="eager" src={head_style_right} alt='icon' className='hidden lg:block'/>
         </div>
         <p className='text-center my-3 lg:my-10 text-orange-800'>IN COMAPANIES</p>
 
@@ -120,7 +120,7 @@ const Reviews = () => {
       {list.map((item)=>(
         <CarouselItem className="xl:basis-1/3 lg:basis-1/2 pt-36 relative" key={item.id}>
           <div className='flex justify-center '>
-             <Image src={item.student_images} alt={item.name} className='w-28 student-image absolute top-10'/>
+             <Image loading="eager" src={item.student_images} alt={item.name} className='w-28 student-image absolute top-10'/>
           </div>
         <Card className="pt-10 rounded-2xl">
          <CardHeader>
@@ -129,7 +129,7 @@ const Reviews = () => {
          </CardHeader>
           <CardFooter className="flex justify-between pr-0">
              <div>
-               <Image src={item.image} alt={item.name} className='w-36 h-10'/> 
+               <Image loading="eager" src={item.image} alt={item.name} className='w-36 h-10'/> 
              </div>
              <div className='student-lpa'>
                 <p>{item.lpa}</p>
