@@ -64,7 +64,7 @@ const Navbar = () => {
     <>
       <div className="fixed w-full top-0 z-10" style={{background:color}}>
         <div className=" mx-[30px] lg:mx-[90px] w-full flex py-3 lg:py-10 gap-10">
-         <Image  loading="eager" src={w3tec_logo} alt="w3tec logo" />
+         <Image  layout="intrinsic" priority src={w3tec_logo} alt="w3tec logo" />
            <ul type='none' className='w-full hidden text-lg lg:flex gap-10 items-center' >
             <li>
             <Popover content={Hover_msg} >

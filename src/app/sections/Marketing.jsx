@@ -75,16 +75,16 @@ const Marketing = () => {
             <li className='py-3'>
                 <ul type="none" className='flex '>
                     {list.list1.map((item)=>(
-                      <li key={item.id}><Image loading="eager" src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image layout="intrinsic" priority src={item.image} alt={item.alt}/></li>
                     ))}
                  </ul>
                  <ul type="none" className='flex '>
                     {list.list2.map((item)=>(
-                      <li key={item.id}><Image loading="eager" src={item.image} alt={item.alt}/></li>
+                      <li key={item.id}><Image layout="intrinsic" priority src={item.image} alt={item.alt}/></li>
                     ))}
                  </ul>
                  <ul type="none">
-                    <li><Image loading="eager" src={whatsapp_marketing_logo} alt='whatsapp marketing logo'/></li>
+                    <li><Image layout="intrinsic" priority src={whatsapp_marketing_logo} alt='whatsapp marketing logo'/></li>
                  </ul>
              </li>
             <li className='flex justify-start py-5 gap-4'>
@@ -95,7 +95,7 @@ const Marketing = () => {
         </div>
         {/*  */}
         <div className='pt-14 pl-6'>
-            <Image loading="eager" src={student_image} alt='student image'/>
+            <Image layout="intrinsic" priority src={student_image} alt='student image'/>
         </div>
       </div>
     </div>

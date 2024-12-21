@@ -45,13 +45,13 @@ const Client_sec = () => {
       <div className='grid grid-cols-5 py-10 place-items-center '>
         {list.map((item,index)=>(
             
-             <Image key={index} src={item} alt="company logo" className='client-images my-3' loading="eager"/>
+             <Image key={index} src={item} alt="company logo" className='client-images my-3' layout="intrinsic" priority/>
             
         ))}
       </div>
       <div className='flex gap-10 justify-center'>
-        <Image src={iac_image} alt='iac image' className='client-images' loading="eager"/>
-        <Image src={nature_image} alt='nature image' className='client-images' loading="eager"/>
+        <Image src={iac_image} alt='iac image' className='client-images' layout="intrinsic" priority/>
+        <Image src={nature_image} alt='nature image' className='client-images' layout="intrinsic" priority/>
       </div>
     </div>
   )

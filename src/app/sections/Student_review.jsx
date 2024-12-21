@@ -102,7 +102,7 @@ const Student_review = () => {
     <div className='student-review py-10'>
     <div className='mx-[30px]  lg:mx-[90px]'>
         <div className='flex flex-col lg:flex-row justify-center items-center  mb-4 lg:text-4xl'>
-               <Image loading="eager" src={review_head_icon} alt='icon' className='w-[50px]' />Reviews from 
+               <Image layout="intrinsic" priority src={review_head_icon} alt='icon' className='w-[50px]' />Reviews from 
         </div>
        <p className='text-center text-4xl'> W3 Technologies <span className='bg-red-500  lg:py-3 lg:px-5'>Students</span></p>
 
@@ -113,10 +113,10 @@ const Student_review = () => {
             <Card className='flex justify-center bg-inherit border-none text-white'>
                 <div className="card-background-1 card-background flex flex-col lg:flex-row  justify-between gap-8 items-center w-full lg:w-1/2">                  
                            <div className='card-image'>                
-                          <Image loading="eager" src={item.student_images} alt={item.name} className='w-32'/>
+                          <Image layout="intrinsic" priority src={item.student_images} alt={item.name} className='w-32'/>
                         </div>
                         <ul type='none' className=' lg:ml-20'>
-                            <li className='flex gap-3 flex-col lg:flex-row  items-start'><Image loading="eager" src={review_text_style_icon} alt='icon'/>{item.description}</li>
+                            <li className='flex gap-3 flex-col lg:flex-row  items-start'><Image layout="intrinsic" priority src={review_text_style_icon} alt='icon'/>{item.description}</li>
                             <li className='lg:pl-20 pt-5'>{item.name}</li>
                             <li className='lg:pl-20'>{item.role}</li>
                         </ul>
