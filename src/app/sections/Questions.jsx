@@ -13,7 +13,7 @@ const Questioning = () => {
         <p className='text-3xl '>Do you want to take advantage of our <strong>Special Offers?</strong><br /></p>
         <p className='text-3xl '>Please Call us today</p>
       <div className="flex flex-col lg:flex-row py-10 gap-9">
-      <button className='bg-red-600 text-white px-5 py-3 flex  justify-center items-center rounded-2xl'><Image src={phone_icon} alt="phone icon" layout="intrinsic" priority /><a href="tel:+917416939333"><strong>+91 741-693-9333</strong></a></button>
+      <button className='bg-red-600 text-white px-5 py-3 flex  justify-center items-center rounded-2xl'><Image src={phone_icon} alt="phone icon"  /><a href="tel:+917416939333"><strong>+91 741-693-9333</strong></a></button>
       <button className='bg-black px-5 py-3 text-white rounded-2xl'>Request A Call Back</button>
       </div>
     </div>

@@ -23,21 +23,21 @@ const Footer_sec = () => {
       <div className='mx-[30px] lg:mx-[90px] '>
         <div className='grid grid-cols-1 lg:grid-cols-4 py-14'>
          <ul type='none'>
-            <li className='py-5'><Image src={w3tec_logo_white}  layout="intrinsic" priority alt='w3 logo white'/></li>
+            <li className='py-5'><Image src={w3tec_logo_white}   alt='w3 logo white'/></li>
             <li className='pl-4 my-6 border-l-4 border-regular-gray'>Learn with w3 technologies <br />to start your career</li>
             <li className='flex gap-4'>
-                <Image src={insta_icon} alt='insta icon'  layout="intrinsic" priority/>
-                <Image src={facebook_icon} alt='facebook icon'  layout="intrinsic" priority/>
-                <Image src={youtube_icon} alt='youtube icon'  layout="intrinsic" priority/>
-                <Image src={linkedIn_icon} alt='linkdein icon'  layout="intrinsic" priority/>
+                <Image src={insta_icon} alt='insta icon'  />
+                <Image src={facebook_icon} alt='facebook icon'  />
+                <Image src={youtube_icon} alt='youtube icon'  />
+                <Image src={linkedIn_icon} alt='linkdein icon'  />
             </li>
         </ul>
         
         <ul type='none' className='lg:pl-10' >
             <li className={footer_text_style}>Contact Us</li>
-            <li className='flex gap-3'><Image src={phone_icon}  layout="intrinsic" priority alt='phone icon' /> <a href="tel:++91741693933">+91 741-693-9333</a></li>
-            <li className='flex gap-3 py-3'><Image src={email_icon}  layout="intrinsic" priority alt='email icon'/> <a href="mailto:info@w3tec.com">info@w3tec.com</a></li>
-            <li className='flex gap-3 items-start'><Image src={location_icon}  layout="intrinsic" priority alt='location icon'/>Above IDBI Bank, LR Shine Building 4th Floor, Beside 1-Town Police Station, VRC, Nellore, AP, India, 524001.</li>
+            <li className='flex gap-3'><Image src={phone_icon}   alt='phone icon' /> <a href="tel:++91741693933">+91 741-693-9333</a></li>
+            <li className='flex gap-3 py-3'><Image src={email_icon}   alt='email icon'/> <a href="mailto:info@w3tec.com">info@w3tec.com</a></li>
+            <li className='flex gap-3 items-start'><Image src={location_icon}   alt='location icon'/>Above IDBI Bank, LR Shine Building 4th Floor, Beside 1-Town Police Station, VRC, Nellore, AP, India, 524001.</li>
         </ul>
         <div className='flex lg:justify-center'>
          <ul type='none'>

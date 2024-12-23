@@ -33,7 +33,7 @@ const Video_review = () => {
         <CarouselItem className='relative'>
           <div  style={{display:image}} >
         <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20' ><Image src={play_icon} alt='play-icon'/></button>
-          <Image layout="intrinsic" priority src={chavika_image} alt='chavika Image' className='absolute rounded-3xl ' />
+          <Image  src={chavika_image} alt='chavika Image' className='absolute rounded-3xl ' />
           </div>
         <iframe className='rounded-3xl w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
        
@@ -43,8 +43,8 @@ const Video_review = () => {
         
         <CarouselItem className='relative'>
         <div style={{display:image}} >
-        <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20'><Image layout="intrinsic" priority src={play_icon} alt='play-icon'/></button>
-          <Image layout="intrinsic" priority src={nandin_image} alt='nandini Image' className='absolute'   />
+        <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20'><Image  src={play_icon} alt='play-icon'/></button>
+          <Image  src={nandin_image} alt='nandini Image' className='absolute'   />
           </div>
         <iframe className='w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/KaTjcByzPBc" title="Our Happy Students Naga Nandini M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </CarouselItem>

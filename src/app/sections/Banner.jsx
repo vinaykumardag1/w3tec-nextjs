@@ -30,9 +30,9 @@ const Banner = () => {
             </h1>
 
             {/* Icons */}
-            <Image src={python_icon} alt="Python icon" className="absolute -top-0 left-1/2" layout="intrinsic" priority />
-            <Image src={front_end_icon} alt="Front end icon" className="absolute top-1/4 right-20 pt-10" layout="intrinsic" priority />
-            <Image src={fullstack_icon} alt="Full-Stack" className="absolute right-40 left-1/4" layout="intrinsic" priority />
+            <Image src={python_icon} alt="Python icon" className="absolute -top-0 left-1/2"  />
+            <Image src={front_end_icon} alt="Front end icon" className="absolute top-1/4 right-20 pt-10"  />
+            <Image src={fullstack_icon} alt="Full-Stack" className="absolute right-40 left-1/4"  />
 
             {/* Buttons */}
             <div className="flex gap-10 py-20">
@@ -47,7 +47,7 @@ const Banner = () => {
 
           {/* Right section */}
           <div className="py-10">
-            <Image src={Digital_img} alt="Digital Marketing" layout="intrinsic" priority />
+            <Image src={Digital_img} alt="Digital Marketing"  />
             <Carousel
               plugins={[
                 Autoplay({
@@ -57,13 +57,13 @@ const Banner = () => {
             >
               <CarouselContent>
                 <CarouselItem className="relative">
-                  <Image src={class_img} alt="Class image" layout="intrinsic" priority />
+                  <Image src={class_img} alt="Class image"  />
                   <p className="text-2xl text-white absolute bottom-11 left-14 font-bold">
                     #<span className="text-yellow-500">INTERACTIVE</span> COURSES
                   </p>
                 </CarouselItem>
                 <CarouselItem>
-                  <Image src={kick_start_img} alt="Kick start image" layout="intrinsic" priority />
+                  <Image src={kick_start_img} alt="Kick start image"  />
                   <p className="text-2xl w-full text-white text-center absolute bottom-11 font-bold">
                     #<span className="text-yellow-500">JOIN</span> WITH US
                   </p>

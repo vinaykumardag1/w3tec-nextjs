@@ -57,7 +57,7 @@ const Services_sec = () => {
                 {list.map((item) => (
                     <Card key={item.id} className="services-card rounded-xl py-5 text-white">
                         <CardContent className="flex gap-3 justify-center items-center">
-                            <Image layout="intrinsic" priority src={item.image} alt={item.text} />
+                            <Image src={item.image} alt={item.text} />
                             <p className='text-3xl'>{item.text} <br /><span className='text-sm'>{item.text_abrev}</span></p>
                         </CardContent>
                         <CardFooter>
