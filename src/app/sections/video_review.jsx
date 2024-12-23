@@ -1,59 +1,78 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious
-    
-  } from "@/components/ui/carousel"
-  
-// import Autoplay from "embla-carousel-autoplay"
-import nandin_image from'../public/Images/Naga.jpg'
-import chavika_image from '../public/Images/Chavikala Bhargavi.jpg'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 
+import nandin_image from '../public/Images/Naga.jpg'
+import chavika_image from '../public/Images/Chavikala Bhargavi.jpg'
 import play_icon from '../public/Images/play_icon.png'
 
+const VideoReviewItem = ({ image, videoSrc, altText }) => {
+  const [showPlayButton, setShowPlayButton] = useState(true);
 
-const Video_review = () => {
-  const [image,setImage]=useState('block')
- 
-    function imageBtn(){
-      setImage('none')
-      
-    }
-  
+  const handlePlayButtonClick = () => setShowPlayButton(false);
+
   return (
-    <div className='mx-[30px] lg:mx-[90px] py-24'>
-        <p className='text-center pb-20 text-5xl'>What our <span className='bg-yellow-400 text-white'>Students Say!</span></p>
-     <Carousel>
-      <CarouselContent> 
-        <CarouselItem className='relative'>
-          <div  style={{display:image}} >
-        <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20' ><Image src={play_icon} alt='play-icon'/></button>
-          <Image  src={chavika_image} alt='chavika Image' className='absolute rounded-3xl ' />
-          </div>
-        <iframe className='rounded-3xl w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/GZ4ig72fxYk" title="Our Happy Students Chavikala Bhargavi" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
-       
-        </iframe>
-       
-        </CarouselItem>
-        
-        <CarouselItem className='relative'>
-        <div style={{display:image}} >
-        <button onClick={imageBtn} className='absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20'><Image  src={play_icon} alt='play-icon'/></button>
-          <Image  src={nandin_image} alt='nandini Image' className='absolute'   />
-          </div>
-        <iframe className='w-full h-[500px] lg:h-[700px]'  src="https://www.youtube.com/embed/KaTjcByzPBc" title="Our Happy Students Naga Nandini M" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-        </CarouselItem>
-     </CarouselContent>
-     <CarouselNext className='hidden lg:flex  text-white bg-red-600 p-6'/>
-     <CarouselPrevious className='hidden lg:flex text-white bg-red-600 p-6'/>
-    </Carousel>
-    </div>
-  )
-}
+    <CarouselItem className="relative">
+      {showPlayButton && (
+        <button
+          onClick={handlePlayButtonClick}
+          className="absolute left-[47%] top-[40%] transition-all hover:scale-[150%] z-20"
+        >
+          <Image src={play_icon} alt="play-icon" />
+        </button>
+      )}
+      <Image src={image} alt={altText} className="absolute rounded-3xl" />
+      <iframe
+        className="rounded-3xl w-full h-[500px] lg:h-[700px]"
+        src={videoSrc}
+        title={altText}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
+    </CarouselItem>
+  );
+};
 
-export default Video_review
+const VideoReview = () => {
+  const reviews = [
+    {
+      id: 1,
+      image: chavika_image,
+      videoSrc: "https://www.youtube.com/embed/GZ4ig72fxYk",
+      altText: "Our Happy Students Chavikala Bhargavi",
+    },
+    {
+      id: 2,
+      image: nandin_image,
+      videoSrc: "https://www.youtube.com/embed/KaTjcByzPBc",
+      altText: "Our Happy Students Naga Nandini M",
+    },
+  ];
+
+  return (
+    <div className="mx-[30px] lg:mx-[90px] py-24">
+      <p className="text-center pb-20 text-5xl">
+        What our <span className="bg-yellow-400 text-white">Students Say!</span>
+      </p>
+      <Carousel>
+        <CarouselContent>
+          {reviews.map((review) => (
+            <VideoReviewItem
+              key={review.id}
+              image={review.image}
+              videoSrc={review.videoSrc}
+              altText={review.altText}
+            />
+          ))}
+        </CarouselContent>
+        <CarouselNext className="hidden lg:flex text-white bg-red-600 p-6" />
+        <CarouselPrevious className="hidden lg:flex text-white bg-red-600 p-6" />
+      </Carousel>
+    </div>
+  );
+};
+
+export default VideoReview;
